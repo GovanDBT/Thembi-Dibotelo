@@ -1,3 +1,7 @@
-body {
-    background: yellow;
+:root {
+    --primary-color: #0A192F;
+    --secondary-color: ##243F68;
+    --accent-color: #57DEC6;
+    --heading-color: #CCD6F6;
+    --text-color: #8892B0;
 }
