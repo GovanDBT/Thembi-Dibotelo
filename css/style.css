@@ -258,3 +258,12 @@ a:link {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+/* icons */
+
+/*FIXME: for security reasons svg sprite cannot display using the normal path
+in the browser, use a localhost server for them to display*/
+.icon {
+    width: 40px;
+    height: 40px;
+}
