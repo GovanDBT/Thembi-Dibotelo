@@ -41,7 +41,7 @@ h3 {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -56,13 +56,19 @@ p {
     margin: 0 auto 16px;
 }
 
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 2rem;
     }
 
     h1 {
-        font-size: 7.5rem;
+        font-size: 9rem;
     }
 
     h2 {
@@ -144,6 +150,7 @@ a:link {
 
 .btn-accent:hover {
     background: #fcfcfc;
+    color: var(--primary-color);
 }
 
 @media screen and (min-width: 1024px) {
@@ -160,6 +167,7 @@ a:link {
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
+    padding-bottom: 6rem;
 }
 
 .nav-logo {
@@ -205,7 +213,7 @@ a:link {
 }
 
 .nav-list li a {
-    color: var(--text-color);
+    color: var(--heading-color);
     transition: color .3s ease;
     font-family: Poppins;
     font-size: 1.8rem;
@@ -224,6 +232,7 @@ a:link {
 @media screen and (min-width: 1024px) {
     .nav {
         justify-content: space-between;
+        padding-bottom: 3rem;
     }
 
     .nav-toggler {
@@ -261,9 +270,71 @@ a:link {
 
 /* icons */
 
-/*FIXME: for security reasons svg sprite cannot display using the normal path
-in the browser, use a localhost server for them to display*/
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Hero */
+
+.hero {
+    background: rgb(36, 63, 104);
+    background: radial-gradient(circle, rgba(36, 63, 104, 1) 0%, rgba(10, 25, 47, 1) 80%);
+    height: auto;
+    padding-bottom: 13rem;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content p {
+    color: var(--heading-color);
+}
+
+.name {
+    font-family: 'Bad Script';
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.title {
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    max-width: 80rem;
+    z-index: 1;
+    margin-bottom: 8rem;
+    font-weight: 800;
+}
+
+.title span {
+    color: var(--accent-color);
+}
+
+.subtitle {
+    margin-bottom: 2.5rem;
+    max-width: 60rem;
+}
+
+.btn-hero {
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-line {
+        left: 600px;
+    }
 }
