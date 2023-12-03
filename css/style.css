@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0A192F;
-    --secondary-color: ##243F68;
+    --secondary-color: #243F68;
     --accent-color: #57DEC6;
     --heading-color: #CCD6F6;
     --text-color: #8892B0;
@@ -275,10 +275,10 @@ a:link {
 
 /* icons */
 
-.icon {
+/* .icon {
     width: 100px;
     height: 100px;
-}
+} */
 
 /* Hero */
 
@@ -384,5 +384,115 @@ a.btn-callout {
 
     .btn-callout {
         padding: 1rem 4rem;
+    }
+}
+
+/* Grids */
+
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Blocks */
+
+.block {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+/* What I do section */
+
+.feature-block {
+    padding: 0.5rem 1rem;
+}
+
+.subheading {
+    color: var(--accent-color);
+    letter-spacing: -0.7px;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subheading::before {
+    content: "< ";
+}
+
+.subheading::after {
+    content: " >";
+}
+
+.feature-content {
+    gap: 4rem 3rem;
+    margin: 5rem 0;
+}
+
+.feature-body {
+    position: relative;
+}
+
+.feature-title {
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+.feature-title::before {
+    content: open-quote;
+}
+
+.feature-title::after {
+    content: close-quote;
+}
+
+.feature-number {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    font-size: 15.5rem;
+    padding: 0 4rem;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 60px;
+    left: 110px;
+    z-index: -1;
+}
+
+.one {
+    padding: 0 6rem;
+}
+
+.feature-image {
+    width: 100%;
+    order: 2;
+    align-self: center;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .feature-content:nth-of-type(even) .feature-image {
+        order: 1;
+    }
+
+    .feature-image {
+        order: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-number {
+        left: 290px;
+        z-index: -1;
+    }
+
+    .feature-content {
+        margin: 15rem 0;
     }
 }
