@@ -309,7 +309,7 @@ a:link {
 }
 
 .name {
-    font-family: 'Bad Script';
+    font-family: 'Bad Script', cursive;
     font-size: 2rem;
     font-weight: 400;
     margin: 0;
@@ -509,16 +509,80 @@ a.btn-callout {
     }
 }
 
-/* Slider */
-/* .swiper {
-    width: 600px;
-    height: 300px;
-} */
-
-
-
 .swiper-pagination {
     color: var(--accent-color);
 }
 
-/* Design block */
+/* Testimonial block */
+
+.testimonial-block {
+    padding: 0.5rem 1rem;
+    background: radial-gradient(circle, rgba(36, 63, 104, 1) 0%, rgba(10, 25, 47, 1) 100%);
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.testimonial-img {
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+}
+
+.testimonial-body {
+    text-align: center;
+}
+
+.testimonial-name {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+
+.testimonial-desc {
+    font-family: 'Bad Script', cursive;
+    color: var(--heading-color);
+    max-width: 600px;
+}
+
+.testimonial-desc::before {
+    content: open-quote;
+}
+
+.testimonial-desc::after {
+    content: close-quote;
+}
+
+.occupation {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    color: #fff;
+    font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial-block {
+        background: none;
+    }
+
+    .testimonial {
+        flex-direction: row;
+    }
+
+    .testimonial-body {
+        text-align: left;
+    }
+
+    .testimonial-name {
+        font-size: 3rem;
+    }
+
+    .occupation {
+        font-size: 1.8rem;
+    }
+}

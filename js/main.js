@@ -18,7 +18,7 @@ var typed = new Typed('.auto-type', options);
 
 // Swiper carousel
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper ('.design-swiper', {
   // Optional parameters
   loop: true,
   autoplay: {
@@ -59,4 +59,19 @@ const swiper = new Swiper('.swiper', {
       spaceBetween: 60
     }
   },
+});
+
+const swiper2 = new Swiper('.testimonial-swiper', {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+   delay: 8000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+
 });
