@@ -4,6 +4,11 @@
     --accent-color: #57DEC6;
     --heading-color: #CCD6F6;
     --text-color: #8892B0;
+    --swiper-navigation-size: 6rem;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-color: #57DEC6;
+    --swiper-pagination-color: #57DEC6;
+    --swiper-pagination-bottom: 0;
 }
 
 *,
@@ -406,6 +411,12 @@ a.btn-callout {
     margin-bottom: 8rem;
 }
 
+.block-secondary {
+    background: var(--secondary-color);
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}
+
 /* What I do section */
 
 .feature-block {
@@ -418,6 +429,7 @@ a.btn-callout {
     text-transform: capitalize;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .subheading::before {
@@ -496,3 +508,17 @@ a.btn-callout {
         margin: 15rem 0;
     }
 }
+
+/* Slider */
+/* .swiper {
+    width: 600px;
+    height: 300px;
+} */
+
+
+
+.swiper-pagination {
+    color: var(--accent-color);
+}
+
+/* Design block */

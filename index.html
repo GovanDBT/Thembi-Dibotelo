@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="icon" type="image/x-icon" href="images/sprite.svg#Logo">
+    <!-- <link rel="icon" class="favicon" type="image/x-icon" href="images/Logo.svg"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/6f879d6c21.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -72,7 +73,7 @@
             <div class="feature-body">
                 <h1 class="feature-number">2</h1>
                 <h2 class="feature-title">Design Alchemy</h2>
-                <p>Employs creative precision of Figma, Photoshop, and Illustrator to craft visually stunning and user-centric designs</p>
+                <p>Employs creative precision of Figma, Photo-shop, and Illustrator to craft visually stunning and user-centric designs</p>
             </div>
         </article>
 
@@ -98,10 +99,57 @@
             </div>
         </article>
     </section>
+    <!--Designs-->
+    <section class="block block-secondary design-block container">
+        <h3 class="subheading">My Designs</h3>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <picture class="swiper-slide">
+                    <source type="image/webp" srcset="images/design1_w_593.webp 593w, images/design1_w_867.webp 867w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png" srcset="images/design1_w_593.png 593w, images/design1_w_867.png 867w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="feature-image" src="images/design1.png" alt="Mockup design for a cloud hosting company">
+                </picture>
+                <picture class="swiper-slide">
+                    <source type="image/webp" srcset="images/design2_w_933.webp 768w, images/design2_w_1400.webp 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png" srcset="images/design2_w_933.png 768w, images/design2_w_1400.png 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="feature-image" src="images/design2.png" alt="Mockup portfolio design for a freelance developer">
+                </picture>
+                <picture class="swiper-slide">
+                    <source type="image/webp" srcset="images/design1_w_593.webp 593w, images/design1_w_867.webp 867w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png" srcset="images/design1_w_593.png 593w, images/design1_w_867.png 867w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="feature-image" src="images/design1.png" alt="Mockup design for a cloud hosting company">
+                </picture>
+                <picture class="swiper-slide">
+                    <source type="image/webp" srcset="images/design2_w_933.webp 768w, images/design2_w_1400.webp 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png" srcset="images/design2_w_933.png 768w, images/design2_w_1400.png 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="feature-image" src="images/design2.png" alt="Mockup portfolio design for a freelance developer">
+                </picture>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
 
     <!--JS links and paths-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
