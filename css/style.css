@@ -417,6 +417,11 @@ a.btn-callout {
     border-radius: 20px;
 }
 
+.block-accent {
+    background: var(--accent-color);
+    padding: 1rem 3rem;
+}
+
 /* What I do section */
 
 .feature-block {
@@ -609,5 +614,47 @@ a.btn-callout {
 
     .client-logo {
         font-size: 5rem;
+    }
+}
+
+/* Blog block */
+
+.blog-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-heading {
+    color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 700px;
+    margin: 0;
+}
+
+.btn-blog {
+    padding: 1.5rem 9rem;
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .blog-body {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .blog-heading {
+        font-size: 4rem;
+        align-items: center;
+    }
+
+    .blog-block.block-accent {
+        padding: 4rem 3rem;
     }
 }
