@@ -407,8 +407,8 @@ a.btn-callout {
 /* Blocks */
 
 .block {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .block-secondary {
@@ -584,5 +584,30 @@ a.btn-callout {
 
     .occupation {
         font-size: 1.8rem;
+    }
+}
+
+/* Clients block */
+
+.client-block .block-secondary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 2rem 4rem;
+    justify-content: center;
+}
+
+.client-logo {
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .client-block .block-secondary {
+        padding: 5rem 4rem;
+        gap: 10rem;
+    }
+
+    .client-logo {
+        font-size: 5rem;
     }
 }

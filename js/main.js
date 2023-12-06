@@ -73,5 +73,4 @@ const swiper2 = new Swiper('.testimonial-swiper', {
     el: '.swiper-pagination',
   },
 
-
 });
