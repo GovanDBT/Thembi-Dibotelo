@@ -499,11 +499,11 @@ a.btn-callout {
 }
 
 @media screen and (min-width: 768px) {
-    .feature-content:nth-of-type(even) .feature-image {
+    .feature-content:nth-of-type(even) .svg-feature-image {
         order: 1;
     }
 
-    .feature-image {
+    .svg-feature-image {
         order: 0;
     }
 }
