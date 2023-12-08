@@ -181,10 +181,6 @@ a:link {
 }
 
 .nav-logo {
-    transform: translateY(5px);
-}
-
-.nav-logo img {
     width: 5.5rem;
 }
 
