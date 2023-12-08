@@ -489,9 +489,12 @@ a.btn-callout {
 
 .feature-image {
     width: 100%;
-    order: 2;
     align-self: center;
     margin: 0 auto;
+}
+
+.svg-feature-image {
+    order: 1;
 }
 
 @media screen and (min-width: 768px) {
