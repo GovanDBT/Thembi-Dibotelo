@@ -236,7 +236,7 @@ a:link {
 }
 
 .highlighter {
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
 }
 
 @media screen and (min-width: 1024px) {
@@ -280,10 +280,11 @@ a:link {
 
 /* icons */
 
-/* .icon {
-    width: 100px;
-    height: 100px;
-} */
+.icon {
+    width: 250px;
+    height: 250px;
+    background-size: 100% auto;
+}
 
 /* Hero */
 
@@ -467,6 +468,10 @@ a.btn-callout {
 
 .feature-title::after {
     content: close-quote;
+}
+
+.feature-body p {
+    max-width: 490px;
 }
 
 .feature-number {
@@ -673,7 +678,10 @@ a.btn-callout {
 .footer-grid {
     column-gap: 4rem;
     justify-items: center;
-    align-items: center;
+}
+
+.footer-brand {
+    align-self: center;
 }
 
 .footer-logo {
@@ -684,6 +692,8 @@ a.btn-callout {
 .footer-name-brand {
     cursor: pointer;
     transition: all .5s ease;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .footer-name-brand span {
