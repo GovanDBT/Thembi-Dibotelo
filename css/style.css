@@ -38,7 +38,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: Poppins;
     color: var(--heading-color);
     margin-bottom: 0.8rem;
@@ -55,6 +56,10 @@ h2 {
 
 h3 {
     font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,6 +83,10 @@ h3 {
 
     h3 {
         font-size: 3.2rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
     }
 }
 
@@ -138,6 +147,11 @@ a:link {
     color: #fff;
 }
 
+.btn-white {
+    background: #fff;
+    color: var(--accent-color);
+}
+
 .btn-primary:hover {
     background: #254068;
 }
@@ -177,6 +191,9 @@ a:link {
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
+}
+
+.nav-hero {
     padding-bottom: 6rem;
 }
 
@@ -825,4 +842,127 @@ a.btn-callout {
     .footer-logo {
         width: 25rem;
     }
+}
+
+/* Resume */
+
+/* resume heading */
+.resume-heading {
+    margin-top: 2rem;
+}
+
+.resume-heading.block-accent {
+    padding: 1rem;
+}
+
+.personal-info-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.personal-info-name {
+    color: var(--secondary-color);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+.btn-resume {
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.personal-info-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn-resume {
+        padding: 1rem 3rem;
+    }
+
+    .personal-info-name {
+        font-size: 5rem;
+    }
+    
+    .personal-info-body {
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
+/* resume body */
+
+.resume-body {
+    padding: 0.5rem 1rem;
+}
+
+.background-content {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.summary {
+    text-align: center;
+}
+
+.resume-body-headings {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.background-content-subheader {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.background-content-dates {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+a.certificate-links {
+    text-decoration: underline;
+}
+
+.certificate-links {
+    color: var(--heading-color);
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 1.4rem;
+    transition: all .3s ease;
+}
+
+.certificate-links:hover {
+    color: var(--accent-color);
+}
+
+.practical-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.practical-skills-list li::before {
+    content: "\2022";
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1.4rem;
+    
 }
