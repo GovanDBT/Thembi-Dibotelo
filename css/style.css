@@ -795,9 +795,6 @@ a.btn-callout {
     opacity: 0.6;
     font-size: 1.8rem;
     text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
     bottom: 0;
     margin-bottom: 0;
 }
@@ -873,6 +870,12 @@ a.btn-callout {
     border-radius: 10px;
     font-size: 1.5rem;
     padding: 1rem 1.5rem;
+    transition: all .5s ease;
+}
+
+.btn-resume:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .personal-info-body {
@@ -902,6 +905,10 @@ a.btn-callout {
         flex-direction: row;
         gap: 5rem;
     }
+
+    .personal-info {
+        font-size: 2rem;
+    }
 }
 
 /* resume body */
@@ -912,6 +919,11 @@ a.btn-callout {
 
 .background-content {
     border-bottom: 1px solid var(--secondary-color);
+    padding: 2rem 0;
+}
+
+.background-content:last-of-type {
+    border: none;
 }
 
 .summary {
@@ -963,6 +975,98 @@ a.certificate-links {
     color: var(--accent-color);
     font-weight: bold;
     display: inline-block;
-    width: 1.4rem;
-    
+    width: 1.5rem;
+}
+
+/* resume skills */
+
+.skill-content {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 2rem 0;
+}
+
+.skill-content:last-of-type {
+    border: none;
+}
+
+.hard-skill, .soft-skill, .language {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    text-transform: capitalize;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+progress[value] {
+    --progress-background: rgba(88, 210, 189, 0.40);
+    /* the background color */
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 240px;
+    height: 8px;
+    margin: 8px 0;
+    border-radius: 10em;
+    background: var(--progress-background);
+}
+
+progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--progress-background);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--accent-color);
+}
+
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+    progress[value] {
+        width: 350px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .resume-grid {
+        grid-template-columns: 30fr 70fr;
+        column-gap: 3rem;
+    }
+
+    .skills {
+        grid-column: 1;
+        grid-row: 1;
+        border-right: 2px solid var(--accent-color);
+        padding: 0 3rem;
+    }
+
+    .skills .resume-body-headings {
+        text-align: center;
+    }
+
+    .background {
+        grid-column: 2;
+    }
+
+    .summary {
+        text-align: left;
+    }
+
+    .resume-body-headings {
+        text-align: left;
+    }
 }
