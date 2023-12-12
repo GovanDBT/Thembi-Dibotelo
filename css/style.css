@@ -1172,6 +1172,17 @@ progress[value]::-moz-progress-bar {
     background-size: cover;
 }
 
+.card2 {
+    background: url(../images/design2_w_1400.png) no-repeat;
+    background-size: cover;
+}
+
+.card3 {
+    background: url(../images/logo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .card-header {
     display: flex;
     gap: 1rem;
@@ -1212,5 +1223,58 @@ a.btn-card {
 
 .btn-card {
     border-radius: 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 15px;
+    z-index: 999999;
+    min-width: 300px;
+    max-width: 600px;
+    height: 500px;
+    background: var(--secondary-color);
+    border-left: 5px solid var(--accent-color);
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+    z-index: 99;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
