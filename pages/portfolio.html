@@ -66,7 +66,7 @@
     <section class="projects container">
         <div class="card websites mockups">
             <div class="ribbon"><span class="ribbon__content">latest project</span></div>
-            <div class="card-img card1"></div>
+            <div class="card-img card2" data-modal-target="#modal"></div>
             <div class="card-body">
                 <div class="card-header">
                     <span class="badge badge-primary">Website</span>
@@ -78,6 +78,17 @@
                     <a href="https://github.com/GovanDBT" target="_blank" class="btn btn-accent btn-card"></i>GitHub</a>
                 </div>
             </div>
+           
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <h3>Hello</h3>
+                <button data-close-btn class="close-btn">&times;</button>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sed aut autem, voluptatibus ad aliquid fuga
+                suscipit, ullam fugiat natus similique. Ex, ipsam architecto tenetur provident cumque alias error nam eius
+                magnam corrupti aliquid harum vero, consequuntur commodi reiciendis culpa nobis fugiat inventore qui maiores
+                mollitia illum est quisquam quibusdam.</p>
         </div>
         <div class="card websites">
             <div class="card-img card1"></div>
@@ -93,7 +104,7 @@
             </div>
         </div>
         <div class="card logos">
-            <div class="card-img card1"></div>
+            <div class="card-img card3"></div>
             <div class="card-body">
                 <div class="card-header">
                     <span class="badge badge-primary">Logo</span>
@@ -137,7 +148,9 @@
     <footer class="footer">
         <p class="footer-copyright">Copyright &copy; 2023 Thembi Dibotelo</p>
     </footer>
+    <div id="overlay"></div>
     <!--JS links and paths-->
+    <script src="modal.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
