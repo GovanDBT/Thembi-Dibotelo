@@ -1076,10 +1076,10 @@ progress[value]::-moz-progress-bar {
 .projects {
     margin-top: 3rem;
     padding: 0 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+    justify-content: center;
 }
 
 .card {
@@ -1091,6 +1091,12 @@ progress[value]::-moz-progress-bar {
     position: relative;
     z-index: 1;
     transition: all .5s ease;
+    display: none;
+}
+
+
+.show {
+    display: block;
 }
 
 .card:hover {
@@ -1107,7 +1113,7 @@ progress[value]::-moz-progress-bar {
 }
 
 .ribbon__content {
-    left: -25px;
+    left: -32px;
     top: 30px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1115,7 +1121,7 @@ progress[value]::-moz-progress-bar {
     position: absolute;
     display: block;
     width: 225px;
-    padding: 10px 0;
+    padding: 10px 0 10px 27px;
     background-color: var(--accent-color);
     box-shadow: 0 0px 10px;
     color: #fff;

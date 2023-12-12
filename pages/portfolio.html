@@ -56,16 +56,16 @@
     </header>
     <!--Portfolio buttons-->
     <section class="filter-buttons container">
-        <button class="filter">All</button>
-        <button class="filter">Websites</button>
-        <button class="filter">Apps</button>
-        <button class="filter">Mockups</button>
-        <button class="filter">Logos</button>
+        <button class="filter" onclick="filterObjects('all')">All</button>
+        <button class="filter" onclick="filterObjects('websites')">Websites</button>
+        <button class="filter" onclick="filterObjects('apps')">Apps</button>
+        <button class="filter" onclick="filterObjects('mockups')">Mockups</button>
+        <button class="filter" onclick="filterObjects('logos')">Logos</button>
     </section>
     <!-- Portfolio projects-->
     <section class="projects container">
-        <div class="card">
-            <div class="ribbon"><span class="ribbon__content">new Project</span></div>
+        <div class="card websites mockups">
+            <div class="ribbon"><span class="ribbon__content">latest project</span></div>
             <div class="card-img card1"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card websites">
             <div class="card-img card1"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card logos">
             <div class="card-img card1"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card websites mockups">
             <div class="card-img card1"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card websites">
             <div class="card-img card1"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -130,7 +130,7 @@
                     <a href="https://github.com/GovanDBT" target="_blank" class="btn btn-accent btn-card"></i>GitHub</a>
                 </div>
             </div>
-        </div>
+        </div> 
         
     </section>
     <!--footer-->
