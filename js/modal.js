@@ -1,3 +1,5 @@
+/** pop up modal for mockup projects */
+
 const openModalBtn = document.querySelectorAll('[data-modal-target]')
 const closeModalBtn = document.querySelectorAll('[data-close-btn]')
 const overlay = document.getElementById('overlay')
