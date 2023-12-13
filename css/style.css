@@ -1342,3 +1342,72 @@ a.btn-card {
     }
 }
 
+/* contacts */
+
+.contacts-socials {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.contact-form-header {
+    text-align: center;
+    margin: 6rem 0 5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.input-form {
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 1rem 1.8rem;
+    outline: none;
+    background: none;
+    color: var(--heading-color);
+}
+
+.input-form::placeholder {
+    color: var(--heading-color);
+    opacity: .6;
+}
+
+textarea.input-form{
+    resize: none;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .form-group {
+        flex-direction: row;
+    }
+
+    .form-group .input-form {
+        width: 350px;
+    }
+
+    textarea.input-form {
+        width: 730px;
+    }
+
+}
