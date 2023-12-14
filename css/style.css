@@ -1409,7 +1409,25 @@ textarea.input-form{
     resize: none;
     width: 300px;
     height: 300px;
-    margin-bottom: 2rem;
+}
+
+.btn-contact {
+    padding: 1rem 7rem;
+}
+
+.input-form.error {
+    border-color: #d93025;
+}
+
+.field .error-txt {
+    margin-top: 1rem;
+    color: #d93025;
+    font-weight: normal;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {

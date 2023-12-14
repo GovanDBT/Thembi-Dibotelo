@@ -80,13 +80,23 @@
     <!-- contact form-->
     <section class="contact-forms container">
         <h3 class="contact-form-header">Contact form</h3>
-        <form class="form" action="">
+        <form class="form">
+            <!-- onsubmit="sendEmail(); reset(); return false;" -->
             <div class="form-group">
-                <input class="input-form" type="text" placeholder="Fullname">
-                <input class="input-form" type="email" name="" placeholder="Email">
+                <div class="field">
+                    <input class="input-form" type="text" id="name" placeholder="Fullname">
+                    <div class="error-txt">*Name cannot be blank</div>
+                </div>
+                <div class="field">
+                    <input class="input-form" type="email" id="email" placeholder="Email">
+                    <div class="error-txt email">*Email cannot be blank</div>
+                </div>
             </div>
-            <textarea class="input-form" placeholder="Your message..."></textarea>
-            <button class="btn btn-accent btn-contact" type="submit">Send Message</button>
+            <div class="field">
+                <textarea class="input-form" id="message" placeholder="Your message..."></textarea>
+                <div class="error-txt">*Message cannot be blank</div>
+            </div>
+            <button class="btn btn-accent btn-contact" type="submit">Send</button>
         </form>
     </section>
     <!--footer-->
@@ -94,6 +104,9 @@
         <p class="footer-copyright">Copyright &copy; 2023 Thembi Dibotelo</p>
     </footer>
     <!--JS links and paths-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/form.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
