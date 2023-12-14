@@ -141,6 +141,7 @@ a:link {
 .btn-accent {
     background: var(--accent-color);
     color: var(--primary-color);
+    transition: all .3s ease;
 }
 
 .btn-primary {
@@ -536,15 +537,22 @@ a.btn-callout {
     }
 }
 
+/* Swiper */
+
 .swiper-pagination {
     color: var(--accent-color);
+}
+
+@media screen and (max-width: 750px) {
+    .design-swiper .swiper-button-prev, .design-swiper .swiper-button-next {
+        display: none;
+    }
 }
 
 /* Testimonial block */
 
 .testimonial-block {
     padding: 0.5rem 1rem;
-    background: radial-gradient(circle, rgba(36, 63, 104, 1) 0%, rgba(10, 25, 47, 1) 100%);
 }
 
 .testimonial {
@@ -593,10 +601,6 @@ a.btn-callout {
 }
 
 @media screen and (min-width: 1024px) {
-    .testimonial-block {
-        background: none;
-    }
-
     .testimonial {
         flex-direction: row;
     }
@@ -933,16 +937,27 @@ a.btn-callout {
 .resume-body-headings {
     text-transform: capitalize;
     text-align: center;
+    margin: 0;
 }
 
 .background-content-subheader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
+}
+
+.background-content-subheading {
+    margin: 0;
 }
 
 .background-content-dates {
     font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.online-courses {
+    margin-bottom: 2rem;
     color: var(--accent-color);
 }
 
@@ -1135,7 +1150,7 @@ progress[value]::-moz-progress-bar {
     border-radius: 20px;
 }
 
-.websites .card-img {
+.mockups .card-img {
     cursor: pointer;
 }
 
@@ -1379,7 +1394,7 @@ a.btn-card {
 .input-form {
     border: 1px solid var(--accent-color);
     border-radius: 20px;
-    padding: 1rem 1.8rem;
+    padding: 1.5rem 1.8rem;
     outline: none;
     background: none;
     color: var(--heading-color);

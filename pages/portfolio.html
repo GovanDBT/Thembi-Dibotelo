@@ -64,7 +64,7 @@
     </section>
     <!-- Portfolio projects-->
     <section class="projects container">
-        <div class="card websites mockups">
+        <div data-aos="flip-up" class="card websites mockups">
             <div class="ribbon"><span class="ribbon__content">latest project</span></div>
             <div class="card-img card2" data-modal-target="#modal"></div>
             <div class="card-body">
@@ -74,7 +74,7 @@
                 </div>
                 <p><span class="project-name">Thembi Dibotelo</span> - Private portfolio for a freelance developer</p>
                 <div class="card-links">
-                    <a href="https://github.com/GovanDBT" target="_blank" class="btn btn-accent btn-card"></i>Website</a>
+                    <a href="../index.html" class="btn btn-accent btn-card"></i>Website</a>
                     <a href="https://github.com/GovanDBT/Thembi-Dibotelo" target="_blank" class="btn btn-accent btn-card"></i>GitHub</a>
                 </div>
             </div>
@@ -87,7 +87,7 @@
             </div>
             <img class="modal-image" src="../images/designs/thembi-index.png" alt="">
         </div>
-        <div class="card websites mockup">
+        <div data-aos="flip-up" class="card websites mockups">
             <div class="card-img card1"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </div>
-        <div class="card logos">
+        <div data-aos="flip-up" class="card logos">
             <div class="card-img card3"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -110,7 +110,7 @@
                 <p><span class="project-name">Thembi.Dibotelo</span> - A logo for a freelance developer</p>
             </div>
         </div>
-        <div class="card apps">
+        <div data-aos="flip-up" class="card apps">
             <div class="card-img card4"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mockups">
+        <div data-aos="flip-up" class="card mockups">
             <div class="card-img card5" data-modal-target="#modal3"></div>
             <div class="card-body">
                 <div class="card-header">
@@ -146,8 +146,10 @@
     <div id="overlay"></div>
     <!--JS links and paths-->
     <script src="../js/modal.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/main.js"></script>
+    <!--Initialize AOS animation-->
+    <script>AOS.init();</script>
 </body>
 
 </html>
