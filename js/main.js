@@ -102,7 +102,7 @@ const swiper2 = new Swiper('.testimonial-swiper', {
   // Optional parameters
   loop: true,
   autoplay: {
-   delay: 8000,
+   delay: 9000,
   },
 
   // If we need pagination
