@@ -5,6 +5,7 @@
     "start": "parcel index.html"
   },
   "devDependencies": {
+    "lodash": "^4.17.21",
     "parcel": "^2.10.3"
   }
 }

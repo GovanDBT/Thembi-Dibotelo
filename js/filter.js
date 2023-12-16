@@ -1,3 +1,5 @@
+import _ from "lodash";
+
 filterObjects("all");
 
 /** function that allows us to filter projects */
