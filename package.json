@@ -1,8 +1,7 @@
 {
-  "name": "thembi-dibotelo",
-  "source": "index.html",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "lodash": "^4.17.21",
