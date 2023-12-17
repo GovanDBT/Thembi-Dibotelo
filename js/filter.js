@@ -1,4 +1,4 @@
-const filter = filterObjects("all");
+filterObjects("all");
 
 /** function that allows us to filter projects */
 
