@@ -64,7 +64,15 @@
     <section class="projects container">
         <div class="card websites mockups">
             <div class="ribbon"><span class="ribbon__content">latest project</span></div>
-            <div class="card-img card2" data-modal-target="#modal"></div>
+            <div class="card-img" data-modal-target="#modal">
+                <picture>
+                    <source type="image/webp" srcset="../images/designs/thembi/design2_w_933.webp 768w, ../images/designs/thembi/design2_w_1400.webp 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png" srcset="../images/designs/thembi/design2_w_933.png 768w, ../images/designs/thembi/design2_w_1400.png 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="project-img" src="../images/designs/thembi/design2.png" alt="Mockup portfolio design for a freelance developer">
+                </picture>
+            </div>
             <div class="card-body">
                 <div class="card-header">
                     <span class="badge badge-primary">Website</span>
@@ -83,10 +91,28 @@
                 <h3>Thembi Dibotelo Website</h3>
                 <button data-close-btn class="close-btn">&times;</button>
             </div>
-            <img class="modal-image" src="../images/designs/thembi-index.png" alt="">
+            <picture>
+                <source type="image/webp"
+                    srcset="../images/designs/thembi/thembi-index_1400.webp">
+                <source type="image/png"
+                    srcset="../images/designs/thembi/thembi-index_1400.png">
+                <img class="project-img" src="../images/designs/thembi/thembi-index.png"
+                    alt="Mockup portfolio design for a freelance developer">
+            </picture>
         </div>
         <div class="card websites mockups">
-            <div class="card-img card1"></div>
+            <div class="card-img">
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/designs/moshified/design1_w_593.webp 593w, ../images/designs/moshified/design1_w_867.webp 867w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png"
+                        srcset="../images/designs/moshified/design1_w_593.png 593w, ../images/designs/moshified/design1_w_867.png 867w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="project-img" src="../images/designs/moshified/design1.png"
+                        alt="Mockup design for a cloud hosting company">
+                </picture>
+            </div>
             <div class="card-body">
                 <div class="card-header">
                     <span class="badge badge-primary">Website</span>
@@ -109,7 +135,18 @@
             </div>
         </div>
         <div class="card apps">
-            <div class="card-img card4"></div>
+            <div class="card-img">
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/apps/co2/co2-app_300.webp 500w, ../images/apps/co2/co2-app_1400.webp 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png"
+                        srcset="../images/apps/co2/co2-app_300.png 500w, ../images/apps/co2/co2-app_1400.png 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="project-img app-img" src="../images/apps/co2/co2-app.png"
+                        alt="App that could measure carbon emissions">
+                </picture>
+            </div>
             <div class="card-body">
                 <div class="card-header">
                     <span class="badge badge-primary">App</span>
@@ -121,7 +158,18 @@
             </div>
         </div>
         <div class="card mockups">
-            <div class="card-img card5" data-modal-target="#modal3"></div>
+            <div class="card-img" data-modal-target="#modal3">
+                <picture>
+                    <source type="image/webp"
+                        srcset="../images/designs/era/era-adv_300.webp 500w, ../images/designs/era/era-adv_1400.webp 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <source type="image/png"
+                        srcset="../images/designs/era/era-adv_300.png 500w, ../images/designs/era/era-adv_1400.png 1400w"
+                        sizes="(min-width: 300px) 100vw">
+                    <img class="project-img" src="../images/designs/era/era-adv.png"
+                        alt="Mockup design for a real estate company">
+                </picture>
+            </div>
             <div class="card-body">
                 <div class="card-header">
                     <span class="badge badge-primary">mockup</span>
@@ -134,7 +182,12 @@
                 <h3>ERA mockup</h3>
                 <button data-close-btn class="close-btn">&times;</button>
             </div>
-            <img class="modal-image" src="../images/designs/era-index.png" alt="">
+            <picture>
+                <source type="image/webp" srcset="../images/designs/era/era-index_1400.webp">
+                <source type="image/png" srcset="../images/designs/era/era-index_1400.webp">
+                <img class="project-img" src="../images/designs/era/era-index.png"
+                    alt="Mockup portfolio for a real estate company">
+            </picture>
         </div>
     </section>
     <!--footer-->
@@ -143,8 +196,8 @@
     </footer>
     <div id="overlay"></div>
     <!--JS links and paths-->
-    <script src="../js/modal.js"></script>
-    <script src="../js/main.js"></script>
+    <script type="module" src="../js/modal.js"></script>
+    <script type="module" src="../js/main.js"></script>
     <script src="../js/filter.js"></script>
 </body>
 
