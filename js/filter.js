@@ -1,8 +1,6 @@
-filterObjects("all");
-
 /** function that allows us to filter projects */
 
-function filterObjects(c) {
+window.filterObjects = function filterObjects(c) {
   var x, i;
   x = document.getElementsByClassName("card");
   if (c == "all") c = "";
@@ -12,7 +10,7 @@ function filterObjects(c) {
   }
 }
 
-function addClass(element, name){
+window.addClass = function addClass(element, name){
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -23,7 +21,7 @@ function addClass(element, name){
   }
 }
 
-function removeClass(element, name ){
+window.removeClass = function removeClass(element, name ){
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -34,3 +32,5 @@ function removeClass(element, name ){
   }
   element.className = arr1.join(" ");
 }
+
+window.filterObjects("all");
