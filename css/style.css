@@ -439,6 +439,24 @@ a.btn-callout {
     padding: 1rem 3rem;
 }
 
+/* Tool */
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    font-size: 8rem;
+    margin: 10rem auto;
+    opacity: .2;
+}
+
+@media screen and (min-width: 768px) {
+    .tools {
+        font-size: 10rem;
+    }
+}
+
 /* What I do section */
 
 .feature-block {
