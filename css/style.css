@@ -365,6 +365,29 @@ a:link {
     }
 }
 
+/* TODO: */
+
+/* Badges */
+.status-badge {
+    font-size: 1.3rem;
+    background-color: rgba(87, 222, 197, 0.226);
+    padding: 0.8rem 1.4rem;
+    border-radius: 10rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    border: 1px solid var(--accent-color);
+}
+
+p.status-badge {
+    color: var(--accent-color);
+}
+
+.status-badge .fa-spinner {
+    color: var(--accent-color);
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+}
+
 /* Git callout */
 
 .git-callout {
