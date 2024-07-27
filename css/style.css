@@ -487,7 +487,7 @@ a.btn-callout {
 .subheading {
     color: var(--accent-color);
     letter-spacing: -0.7px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5rem;
@@ -503,7 +503,43 @@ a.btn-callout {
 
 .feature-content {
     gap: 4rem 3rem;
-    margin: 5rem 0;
+    padding-top: 5rem;
+    align-items: center;
+}
+
+.window {
+    background: var(--heading-color);
+    width: 100%;
+    height: 35px;
+    border-radius: 1rem 1rem 0 0;
+    padding-left: 15px;
+}
+
+.window .fa-circle {
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.window .close {
+    color: #FF605C;
+}
+
+.window .minimize {
+    color: #FFBD44;
+}
+
+.window .enlarge {
+    color: #00CA4E;
+}
+
+.video {
+    border-radius: 0 0 1rem 1rem;
+    border: 5px solid var(--heading-color);
+}
+
+.feature-content-background {
+    background: rgb(10, 25, 47);
+    background: radial-gradient(circle at 50% 25%, rgb(47, 120, 119) 0%, rgb(10, 25, 47) 30%);
 }
 
 .feature-body {
@@ -564,6 +600,15 @@ a.btn-callout {
     .svg-feature-image {
         order: 0;
     }
+
+    .feature-content {
+        padding: 6rem;
+    }
+
+    .feature-content-background {
+        background: rgb(10, 25, 47);
+        background: radial-gradient(circle at 25% 50%, rgb(47, 120, 119) 0%, rgb(10, 25, 47) 25%);
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -573,7 +618,8 @@ a.btn-callout {
     }
 
     .feature-content {
-        margin: 15rem 0;
+        margin: 5rem 0;
+        column-gap: 6rem;
     }
 }
 
