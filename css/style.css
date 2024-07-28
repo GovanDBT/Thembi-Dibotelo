@@ -484,21 +484,28 @@ a.btn-callout {
     padding: 0.5rem 1rem;
 }
 
+.subheading-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 .subheading {
     color: var(--accent-color);
     letter-spacing: -0.7px;
     text-transform: capitalize;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 5rem;
+    text-wrap: nowrap;
 }
 
-.subheading::before {
-    content: "< ";
-}
-
-.subheading::after {
-    content: " >";
+@media screen and (min-width: 1440px) {
+    .subheading-header {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        column-gap: 3rem;
+        border-bottom: 1px solid var(--accent-color);
+    }
 }
 
 .feature-content {
@@ -634,7 +641,7 @@ a.btn-callout {
     }
 
     .feature-content {
-        padding: 6rem;
+        padding: 2rem;
     }
 
     .feature-content-background {
@@ -650,7 +657,6 @@ a.btn-callout {
     }
 
     .feature-content {
-        margin: 5rem 0;
         column-gap: 6rem;
     }
 }
