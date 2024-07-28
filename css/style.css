@@ -539,11 +539,43 @@ a.btn-callout {
 
 .feature-content-background {
     background: rgb(10, 25, 47);
-    background: radial-gradient(circle at 50% 25%, rgb(47, 120, 119) 0%, rgb(10, 25, 47) 30%);
+    background: radial-gradient(circle at 50% 15%, rgb(47, 120, 119) 0%, rgb(10, 25, 47) 18%);
 }
 
 .feature-body {
     position: relative;
+}
+
+.feature-body-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list-title {
+    color: var(--accent-color);
+}
+
+.feature-body-list li::before {
+    content: "\2022";
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5rem;
+}
+
+.feature-skills {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+
+.feature-skills-icon {
+    margin-right: 20px;
+    background: #0d1f3a;
+    padding: 15px;
+    border-radius: 50%;
 }
 
 .feature-title {
@@ -573,7 +605,7 @@ a.btn-callout {
     border-radius: 100%;
     display: inline-block;
     position: absolute;
-    bottom: 60px;
+    bottom: 320px;
     left: 110px;
     z-index: -1;
 }
@@ -1294,6 +1326,11 @@ progress[value]::-moz-progress-bar {
 
 .project-img {
     width: 100%;
+}
+
+.swiper-slide .project-img {
+    border-radius: 2rem;
+    overflow: hidden;
 }
 
 .app-img {
