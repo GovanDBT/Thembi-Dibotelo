@@ -18,22 +18,47 @@ var typed = new Typed('.auto-type', options);
 
 // Swiper carousel
 
-var swiper = new Swiper(".design-swiper", {
-      loop: true,
-      autoplay: true,
+
+const swiper = new Swiper ('.design-swiper', {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+   delay: 3000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+  // Default parameters
+  slidesPerView: 3,
+  spaceBetween: 20,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1024: {
       slidesPerView: 3,
-      spaceBetween: 30,
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      spaceBetween: 60
+    }
+  },
 });
 
 const swiper2 = new Swiper('.testimonial-swiper', {
