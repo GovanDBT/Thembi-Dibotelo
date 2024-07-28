@@ -495,7 +495,6 @@ a.btn-callout {
     text-transform: capitalize;
     font-weight: 700;
     text-align: center;
-    text-wrap: nowrap;
 }
 
 @media screen and (min-width: 1440px) {
@@ -505,6 +504,10 @@ a.btn-callout {
         text-align: left;
         column-gap: 3rem;
         border-bottom: 1px solid var(--accent-color);
+    }
+
+    .subheading {
+        text-wrap: nowrap;
     }
 }
 
@@ -579,7 +582,7 @@ a.btn-callout {
 }
 
 .feature-skills-icon {
-    margin-right: 20px;
+    margin-right: 15px;
     background: #0d1f3a;
     padding: 15px;
     border-radius: 50%;
@@ -614,6 +617,7 @@ a.btn-callout {
     position: absolute;
     bottom: 320px;
     left: 110px;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -631,12 +635,26 @@ a.btn-callout {
     order: 1;
 }
 
+
 @media screen and (min-width: 768px) {
     .feature-content:nth-of-type(even) .svg-feature-image {
         order: 1;
     }
 
+    .feature-content:nth-of-type(even) .feature-video {
+        order: 1;
+    }
+
+    .feature-content-background:nth-of-type(even) {
+        background: rgb(10, 25, 47);
+        background: radial-gradient(circle at 75% 50%, rgb(47, 120, 119) 0%, rgb(10, 25, 47) 25%);
+    }
+
     .svg-feature-image {
+        order: 0;
+    }
+
+    .feature-video {
         order: 0;
     }
 
@@ -739,6 +757,13 @@ a.btn-callout {
 
     .occupation {
         font-size: 1.8rem;
+    }
+
+    .testimonial-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--secondary-color);
     }
 }
 
