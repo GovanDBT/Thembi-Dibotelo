@@ -97,6 +97,7 @@ a:link {
     font-size: 2rem;
 }
 
+
 /* Lists */
 
 .list {
@@ -1029,6 +1030,15 @@ a.btn-callout {
     font-size: 1.8rem;
     color: var(--secondary-color);
     font-weight: 500;
+}
+
+.personal-info a {
+    color: var(--secondary-color);
+    transition: all .5s ease;
+}
+
+.personal-info a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 1024px) {
