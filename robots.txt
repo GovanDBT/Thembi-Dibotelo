@@ -1,1 +1,6 @@
+# Allow all search engines full access
+User-agent: *
+Disallow:
+
+# Point to your sitemap
 Sitemap: https://thembi-dibotelo.netlify.app/sitemap.xml
