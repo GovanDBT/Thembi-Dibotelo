@@ -2,3 +2,8 @@
 package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "."
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
